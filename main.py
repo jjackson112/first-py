@@ -14,10 +14,10 @@ else:
 
 print("Which two numbers do you want to add together?")
 
-user_input1 = float(input("Input your first number: "))
-user_input2 = float(input("Input your second number: "))
+user_input1 = input("Input your first number: ")
+user_input2 = input("Input your second number: ")
 
 try:
-  print(user_input1 + user_input2)
+  print(float(user_input1) + float(user_input2))
 except:
   print("At least one of your inputs was not a number")
